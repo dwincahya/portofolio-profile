@@ -2,9 +2,9 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center py-4 px-8 bg-white shadow-sm">
+    <nav className="flex justify-between items-center py-8 px-24 overflow-hidden bg-white shadow-sm">
       <div className="text-2xl font-bold tracking-widest text-black">
-        DWI NUR CAHYA
+        <a href="/">DWI NUR CAHYA</a>
       </div>
 
       <ul className="flex space-x-8 text-sm font-medium text-gray-700">
