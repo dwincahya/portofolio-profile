@@ -2,8 +2,8 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center py-8 px-24 overflow-hidden bg-white shadow-sm">
-      <div className="text-2xl font-bold tracking-widest text-black">
+    <nav className="flex justify-between items-center py-12 px-24 overflow-hidden bg-white shadow-sm">
+      <div className="text-xl font-bold tracking-widest text-black">
         <a href="/">DWI NUR CAHYA</a>
       </div>
 
@@ -15,14 +15,14 @@ const Navbar = () => {
         <li className="hover:text-blue-600 cursor-pointer">Contact</li>
       </ul>
 
-      <div className="flex space-x-4 text-gray-700">
+      <div className="flex space-x-5 text-gray-700">
         <a
           href="https://github.com/dwincahya"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-blue-600 transition"
         >
-          <FaGithub size={20} />
+          <FaGithub size={28} />
         </a>
         <a
           href="https://www.linkedin.com/in/dwiccah/"
@@ -30,7 +30,7 @@ const Navbar = () => {
           rel="noopener noreferrer"
           className="hover:text-blue-600 transition"
         >
-          <FaLinkedin size={20} />
+          <FaLinkedin size={28} />
         </a>
         <a
           href="https://instagram.com/dwiccah"
@@ -38,7 +38,7 @@ const Navbar = () => {
           rel="noopener noreferrer"
           className="hover:text-blue-600 transition"
         >
-          <FaInstagram size={20} />
+          <FaInstagram size={28} />
         </a>
       </div>
     </nav>
