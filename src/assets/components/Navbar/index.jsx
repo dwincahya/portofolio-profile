@@ -2,7 +2,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full flex justify-between items-center py-4 px-24 bg-white shadow-sm z-50">
+    <nav className="fixed top-0 left-0 w-full flex justify-between items-center py-4 px-24 bg-white shadow-sm border-b border-gray-400 z-50">
       <div className="text-xl font-bold tracking-widest text-black">
         <a href="/">DWI NUR CAHYA</a>
       </div>
