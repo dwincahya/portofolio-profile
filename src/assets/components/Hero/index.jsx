@@ -3,7 +3,6 @@ import img from "../../img/profile.png";
 const Hero = () => {
   return (
     <div className="flex flex-col-reverse lg:flex-row items-center justify-between px-8 py-16 bg-white space-y-8 lg:space-y-0 lg:space-x-8">
-      {/* Left Section */}
       <div className="bg-blue-600 text-white rounded-lg shadow-lg p-8 max-w-md">
         <h1 className="text-4xl font-bold mb-4">Hi, I'm Cahya.</h1>
         <h2 className="text-2xl font-semibold mb-6">Software Engineer</h2>
@@ -24,17 +23,14 @@ const Hero = () => {
         </button>
       </div>
 
-      {/* Right Section */}
       <div className="relative flex-shrink-0">
-        {/* Background Boxes with Gradient */}
-        <div className="absolute -top-6 -left-6 w-48 h-48 bg-gradient-to-br from-blue-500 to-blue-400 rounded-lg z-0"></div>
-        <div className="absolute top-10 left-6 w-48 h-48 bg-gradient-to-br from-blue-500 to-blue-400 rounded-lg z-0"></div>
+        <div className="absolute -top-24 -left-52 w-48 h-48 bg-gradient-to-br from-blue-500 to-blue-400 rounded-lg z-0"></div>
+        <div className="absolute top-6 left-6 w-48 h-48 bg-gradient-to-br from-blue-500 to-blue-400 rounded-lg z-0"></div>
 
-        {/* Foreground Image */}
         <img
           src={img}
           alt="Person"
-          className="relative z-10 w-56 h-56 object-cover rounded-lg shadow-lg"
+          className="relative z-10 w-56 h-56 object-cover"
         />
       </div>
     </div>
