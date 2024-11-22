@@ -3,19 +3,22 @@ import Home from "./assets/pages/Home";
 import NotFound from "./assets/pages/NotFound";
 import Navbar from "./assets/components/Navbar";
 import Footer from "./assets/components/Footer";
-import Skills from "./assets/pages/Skills";
+import Loading from "./assets/components/Loading";
+import useLoading from "./assets/hooks/Loading";
 
 const App = () => {
+  const loading = useLoading(500); 
+
   return (
-      <Router>
+    <Router>
+      {loading && <Loading />}
       <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Footer />
-      </Router>
+    </Router>
   );
 };
 
