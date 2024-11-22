@@ -9,10 +9,10 @@ const Navbar = () => {
 
       <ul className="flex space-x-8 text-sm font-medium text-gray-700">
         <li className="hover:text-blue-600 cursor-pointer">
-          <a href="#home">Home</a>
+          <a href="/">Home</a>
         </li>
         <li className="hover:text-blue-600 cursor-pointer">
-          <a href="#skills">Skills</a>
+          <a href="/skills">Skills</a>
         </li>
         <li className="hover:text-blue-600 cursor-pointer">
           <a href="#projects">Projects</a>

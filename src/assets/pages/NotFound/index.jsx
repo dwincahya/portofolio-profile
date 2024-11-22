@@ -1,9 +1,8 @@
-import Navbar from "../components/Navbar";
+
 
 const NotFound = () => {
   return (
     <div>
-      <Navbar />
       <div className="mt-24 text-center">
         <h1 className="mb-4 text-6xl font-semibold text-blue-500">404</h1>
         <p className="mb-4 text-lg text-gray-600">
