@@ -11,6 +11,22 @@
   }
 }
 
+@keyframes fadeInTop {
+  0% {
+    transform: translateY(50px); /* Start 50px below */
+    opacity: 0; /* Start invisible */
+  }
+  100% {
+    transform: translateY(0); /* Move to original position */
+    opacity: 1; /* Become fully visible */
+  }
+}
+
+.fadeInTop {
+  animation: fadeInTop 1.5s ease-out forwards; /* 1.5s duration */
+}
+
+
 .animate-blink {
   animation: blink 1s step-end infinite;
 }
