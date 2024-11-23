@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom'
 
-const Logo = () => {
+const Logo = ({Name}) => {
   return (
     <div className="text-xl font-bold tracking-widest text-black">
-        <NavLink to="/">DWI NUR CAHYA</NavLink>
+        <NavLink to="/">{Name}</NavLink>
       </div>
   )
 }
