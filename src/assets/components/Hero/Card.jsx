@@ -6,6 +6,7 @@ const Card = ({
   Description2,
   Description3,
   buttonName,
+  buttonLink,
 }) => {
   const displayText = useTypingEffect(["Software Engineer", "Web Developer"]);
 
@@ -19,7 +20,8 @@ const Card = ({
       <p className="mb-4">{Description1}</p>
       <p className="mb-4">{Description2}</p>
       <p className="mb-6">{Description3}</p>
-      <button className="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition">
+      <button className="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition"
+      onClick={() => window.open(buttonLink, "_blank")}>
         {buttonName}
       </button>
     </div>
