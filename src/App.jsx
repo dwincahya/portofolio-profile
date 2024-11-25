@@ -1,30 +1,30 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./assets/pages/Home";
-import NotFound from "./assets/pages/NotFound";
+import { Suspense, lazy } from "react"; 
 import Navbar from "./assets/components/Navbar";
 import Footer from "./assets/components/Footer";
-import Loading from "./assets/components/Loading";
-import useLoading from "./assets/hooks/Loading";
-import Skills from "./assets/pages/Skills";
-import Projects from "./assets/pages/Projects";
-import Experience from "./assets/pages/Experience";
-import Contact from "./assets/pages/Contact";
+import Loading from "./assets/components/Loading"; 
+
+const Home = lazy(() => import("./assets/pages/Home"));
+const Skills = lazy(() => import("./assets/pages/Skills"));
+const Projects = lazy(() => import("./assets/pages/Projects"));
+const Experience = lazy(() => import("./assets/pages/Experience"));
+const Contact = lazy(() => import("./assets/pages/Contact"));
+const NotFound = lazy(() => import("./assets/pages/NotFound"));
 
 const App = () => {
-  const loading = useLoading(500); 
-
   return (
     <Router>
-      {loading && <Loading />}
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <Suspense fallback={<Loading />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
       <Footer />
     </Router>
   );

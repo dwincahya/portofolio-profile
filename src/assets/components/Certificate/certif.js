@@ -12,7 +12,7 @@ const certificates = [
   },
   {
       title: "HMIF Dedicated to School 2024",
-      description: "Certificate for participating in the HMIF Dedicated to School event",
+      description: "Certificate for participating in the HMIF Dedicated to School event.",
       image: certificate1,
       file: "/certificates/Amikom-HMIF.pdf",
   },
