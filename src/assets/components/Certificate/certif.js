@@ -1,23 +1,29 @@
+import certificate1 from "../../img/certifcate/Amikom-HMIF.jpg"
+import certificate2 from "../../img/certifcate/Amikom-UXDesign.jpg"
+import certificate3 from "../../img/certifcate/Amikom-WebDesign.jpg"
+
+
 const certificates = [
-    {
-      title: "React Developer",
-      description: "Certificate for completing React course.",
-      image: "https://via.placeholder.com/300", 
+  {
+      title: "Web Design Competition",
+      description: "Certificate for participating in a web design competition from AMIKOM.",
+      image: certificate3, 
       file: "/certificates/Amikom-WebDesign.pdf", 
-    },
-    {
-      title: "JavaScript Essentials",
-      description: "Certificate for mastering JavaScript basics.",
-      image: "https://via.placeholder.com/300",
+  },
+  {
+      title: "HMIF Dedicated to School 2024",
+      description: "Certificate for participating in the HMIF Dedicated to School event",
+      image: certificate1,
       file: "/certificates/Amikom-HMIF.pdf",
-    },
-    {
-      title: "Web Design Basics",
-      description: "Certificate for learning web design principles.",
-      image: "https://via.placeholder.com/300",
+  },
+  {
+      title: "UI/UX Competition",
+      description: "Certificate for participating in a UI/UX competition from AMIKOM.",
+      image: certificate2,
       file: "/certificates/Amikom-UXDesign.pdf",
-    },
-  ];
+  },
+];
+
   
   export default certificates;
   
