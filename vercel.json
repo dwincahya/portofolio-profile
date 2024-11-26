@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "https://www.dwinurcahya.my.id",
-      "permanent": true
-    }
-  ]
-}
