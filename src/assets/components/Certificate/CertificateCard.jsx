@@ -6,7 +6,7 @@ const CertificateCard = () => {
       {certificates.map((certificate, index) => (
         <div
           key={index}
-          className="bg-white shadow-md rounded-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:scale-105 cursor-pointer"
+          className="bg-white shadow-md rounded-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:shadow-gray-500 hover:scale-105 cursor-pointer"
           style={{ width: "372px", height: "292px" }} 
           onClick={() => window.open(certificate.file, "_blank")}
         >
