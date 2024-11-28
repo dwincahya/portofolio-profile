@@ -4,12 +4,12 @@ import Navbar from "./assets/components/Navbar";
 import Footer from "./assets/components/Footer";
 import Loading from "./assets/components/Loading"; 
 
-const Home = lazy(() => import("./assets/pages/Home"));
-const Skills = lazy(() => import("./assets/pages/Skills"));
-const Projects = lazy(() => import("./assets/pages/Projects"));
-const Experience = lazy(() => import("./assets/pages/Experience"));
-const Contact = lazy(() => import("./assets/pages/Contact"));
-const NotFound = lazy(() => import("./assets/pages/NotFound"));
+const Home = lazy(() => import("@/assets/pages/Home"));
+const Skills = lazy(() => import("@/assets/pages/Skills"));
+const Projects = lazy(() => import("@/assets/pages/Projects"));
+const Experience = lazy(() => import("@/assets/pages/Experience"));
+const Contact = lazy(() => import("@/assets/pages/Contact"));
+const NotFound = lazy(() => import("@/assets/pages/NotFound"));
 
 const App = () => {
   return (

@@ -1,8 +1,8 @@
-import SkillCard from "../../components/Card"
+import SkillCard from "@/assets/components/SkillCard"
 
 const Skills = () => {
   return (
-    <div className="items-center mt-24 justify-center text-center">
+    <div className="items-center pt-32 justify-center text-center">
     <div className="text-2xl font-semibold">SKILLS</div>
     <SkillCard />
     </div>
