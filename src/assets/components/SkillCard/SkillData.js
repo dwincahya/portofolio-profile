@@ -1,5 +1,6 @@
-import { FaReact, FaHtml5, FaFigma, FaBootstrap, FaDatabase } from "react-icons/fa";
+import { FaReact, FaHtml5, FaFigma, FaBootstrap, FaDatabase} from "react-icons/fa"; 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { FaPython, FaLaravel } from "react-icons/fa"; 
 
 const SkillData = [
   {
@@ -44,7 +45,18 @@ const SkillData = [
     description:
       "Built optimal React applications with Server-Side Rendering (SSR) and Static Site Generation (SSG) using Next.js.",
   },
+  {
+    icon: FaLaravel,  
+    title: "Laravel",
+    description:
+      "Experienced in building robust web applications with Laravel, utilizing MVC, and building RESTful APIs.",
+  },
+  {
+    icon: FaPython,  
+    title: "Python",
+    description:
+      "Proficient in Python programming for various applications, including data science, machine learning, and automation.",
+  },
 ];
-
 
 export default SkillData;
