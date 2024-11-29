@@ -1,9 +1,8 @@
 import Card from "./Card";
-import Profile from "./Profile";
 
 const Hero = () => {
   return (
-    <div className="mt-20 ml-24 flex flex-col-reverse lg:flex-row items-center justify-between px-8 py-16 bg-white space-y-8 lg:space-y-0 lg:space-x-8">
+    <div className="mt-40 sm:mt-40 lg:mt-32 px-2 sm:px-5 lg:px-20 flex flex-col-reverse lg:flex-row items-center justify-between bg-white space-y-8 lg:space-y-0 lg:space-x-8">
       <Card
         Header="Hi, I'm Cahya."
         Description1="I have a deep passion for technology and a constant drive to learn new things."
@@ -12,7 +11,6 @@ const Hero = () => {
         buttonName="Check out my CV"
         buttonLink="/CV/CV-DwiNurCahya.pdf"
       />
-      <Profile />
     </div>
   );
 };
