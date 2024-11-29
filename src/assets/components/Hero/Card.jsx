@@ -11,7 +11,7 @@ const Card = ({
   const displayText = useTypingEffect(["Software Engineer", "Web Developer"]);
 
   return (
-    <div className="bg-blue-600 text-white md:rounded-lg shadow-lg p-6 sm:p-8 lg:p-10 shadow-slate-800 w-full max-w-full lg:max-w-md">
+    <div className="bg-blue-600 text-white rounded-lg shadow-lg p-6 sm:p-8 lg:p-10 shadow-slate-800 w-full max-w-full lg:max-w-md">
       <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
         {Header}
       </h1>
