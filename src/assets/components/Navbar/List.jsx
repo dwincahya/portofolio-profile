@@ -5,31 +5,26 @@ const List = ({ isMenuOpen, toggleMenu }) => {
     <ul
       className={`${
         isMenuOpen
-          ? "flex flex-col space-y-6 text-lg font-medium items-start w-full"
-          : "hidden md:flex md:flex-row md:space-x-8 md:items-center md:space-y-0"
+          ? "flex flex-col space-y-8 text-lg font-medium items-center w-full mt-8"
+          : "hidden md:flex md:flex-row md:space-x-12 lg:space-x-16 md:items-center"
       }`}
     >
       {[
-        { name: "Home", path: "/home" },
+        { name: "Home", path: "/" },
         { name: "Skills", path: "/skills" },
         { name: "Projects", path: "/projects" },
         { name: "Experiences", path: "/experience" },
         { name: "Contact", path: "/contact" },
       ].map(({ name, path }) => (
-        <li
-          key={name}
-          className={`${
-            isMenuOpen ? "w-full border-b border-gray-300 pb-2" : ""
-          }`}
-        >
+        <li key={name}>
           <NavLink
             to={path}
             onClick={toggleMenu}
             className={({ isActive }) =>
               `block ${
-                isMenuOpen
-                  ? "hover:text-yellow-300 transition"
-                  : "text-white md:hover:text-yellow-400 transition"
+                isActive
+                  ? "text-yellow-300" 
+                  : "text-white transition-colors duration-200"
               }`
             }
           >
