@@ -1,6 +1,6 @@
 import img from "../../img/profile.png";
 
-const Profile = () => {
+const PhotoProfile = () => {
   return (
     <div className="relative flex-shrink-0 flex items-center justify-center">
       <div className="absolute top-6 right-72 w-60 h-60 bg-gradient-to-br from-blue-500 to-blue-400 rounded-lg z-0"></div>
@@ -14,4 +14,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default PhotoProfile;

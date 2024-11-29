@@ -1,4 +1,5 @@
 import Card from "./Card";
+import PhotoProfile from "./Profile";
 
 const Hero = () => {
   return (
@@ -11,6 +12,7 @@ const Hero = () => {
         buttonName="Check out my CV"
         buttonLink="/CV/CV-DwiNurCahya.pdf"
       />
+      {/* <PhotoProfile /> */}
     </div>
   );
 };
