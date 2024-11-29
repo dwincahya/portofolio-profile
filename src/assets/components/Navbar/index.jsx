@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full flex justify-between items-center py-4 px-6 md:px-12 lg:px-24 ${
+      className={`fixed top-0 left-0 w-full flex justify-between items-center py-4 px-6 md:px-8 lg:px-9 ${
         isMenuOpen
           ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-md"
           : "bg-gradient-to-r from-blue-500 to-blue-700 text-white"
