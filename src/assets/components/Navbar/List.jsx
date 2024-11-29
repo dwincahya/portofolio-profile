@@ -5,8 +5,8 @@ const List = ({ isMenuOpen, toggleMenu }) => {
     <ul
       className={`${
         isMenuOpen
-          ? "flex flex-col space-y-8 text-lg font-medium items-center w-full mt-8"
-          : "hidden md:flex md:flex-row md:space-x-12 lg:space-x-16 md:items-center"
+          ? "flex flex-col space-y-8 text-xl font-medium items-center w-full mt-6"
+          : "hidden md:flex md:flex-row md:space-x-8 xl:text-xl lg:space-x-12  2xl:text-3xl md:items-center"
       }`}
     >
       {[
@@ -23,8 +23,8 @@ const List = ({ isMenuOpen, toggleMenu }) => {
             className={({ isActive }) =>
               `block ${
                 isActive
-                  ? "text-yellow-300" 
-                  : "text-white transition-colors duration-200"
+                  ? "text-yellow-300"
+                  : "text-white transition-colors duration-200 hover:text-yellow-400"
               }`
             }
           >
