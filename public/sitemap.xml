@@ -5,11 +5,28 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <url>
+    <loc>https://dwinurcahya.my.id/</loc>
+    <lastmod>2024-12-01T05:44:15+00:00</lastmod>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-  <loc>https://dwinurcahya.my.id/</loc>
-  <lastmod>2024-12-01T05:44:15+00:00</lastmod>
-</url>
+  <url>
+    <loc>https://dwinurcahya.my.id/projects</loc>
+    <lastmod>2024-12-01T05:44:15+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
 
+  <url>
+    <loc>https://dwinurcahya.my.id/skills</loc>
+    <lastmod>2024-12-01T05:44:15+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dwinurcahya.my.id/contact</loc>
+    <lastmod>2024-12-01T05:44:15+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
 
 </urlset>
