@@ -1,8 +1,7 @@
-import React from 'react'
 
-const Header = () => {
+const Header = ({title}) => {
   return (
-    <div>Header</div>
+    <div className="text-2xl font-semibold">{title}</div>
   )
 }
 
