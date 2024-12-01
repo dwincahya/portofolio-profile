@@ -1,8 +1,12 @@
+import CardPorto from "@/assets/components/CardPorto"
+import DataPorto from "@/assets/components/CardPorto/DataPorto"
 
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div className="mt-46">
+    <CardPorto data={DataPorto} />
+    </div>
   )
 }
 

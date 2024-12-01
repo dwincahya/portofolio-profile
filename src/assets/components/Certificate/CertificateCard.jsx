@@ -1,9 +1,8 @@
-import certificates from "./certif";
 
-const CertificateCard = () => {
+const CertificateCard = ({data}) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 pb-10 gap-16 justify-items-center">
-      {certificates.map((certificate, index) => (
+      {data.map((certificate, index) => (
         <div
           key={index}
           className="bg-white shadow-md shadow-gray-400 rounded-lg overflow-hidden transform transition duration-300 hover:shadow-lg hover:shadow-gray-700 hover:scale-105 cursor-pointer"

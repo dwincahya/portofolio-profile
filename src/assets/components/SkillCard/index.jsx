@@ -1,12 +1,11 @@
-import SkillData from "./SkillData";
 
-const SkillCard = () => {
+const SkillCard = ({data}) => {
   return (
     <div className="py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16">
-        {SkillData && SkillData.length > 0 ? (
+        {data && data.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {SkillData.map((skill, index) => (
+            {data.map((skill, index) => (
               <div
                 key={index}
                 className="bg-white text-center rounded-lg shadow-lg p-6 transition transform hover:scale-105 hover:shadow-xl"

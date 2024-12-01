@@ -1,6 +1,6 @@
-import certificate1 from "../../img/certifcate/Amikom-HMIF.jpg"
-import certificate2 from "../../img/certifcate/Amikom-UXDesign.jpg"
-import certificate3 from "../../img/certifcate/Amikom-WebDesign.jpg"
+import certificate1 from "@/assets/img/certifcate/Amikom-HMIF.jpg"
+import certificate2 from "@/assets/img/certifcate/Amikom-UXDesign.jpg"
+import certificate3 from "@/assets/img/certifcate/Amikom-WebDesign.jpg"
 
 
 const certificates = [

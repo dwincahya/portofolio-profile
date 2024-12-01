@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"; // Impor Link
+import { Link } from "react-router-dom"; 
 import Animate from "./Animate";
 import Header from "./Header";
 

@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react"; 
-import Navbar from "./assets/components/Navbar";
-import Footer from "./assets/components/Footer";
-import Loading from "./assets/components/Loading"; 
+import Navbar from "@/assets/components/Navbar";
+import Footer from "@/assets/components/Footer";
+import Loading from "@/assets/components/Loading"; 
 
 const Home = lazy(() => import("@/assets/pages/Home"));
 const Skills = lazy(() => import("@/assets/pages/Skills"));
