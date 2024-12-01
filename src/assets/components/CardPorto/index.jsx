@@ -1,14 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import useSequentialAnimation from "@/assets/hooks/useSequentialAnimation"; 
 
 const CardPorto = ({ data }) => {
-  const [animateIndex, setAnimateIndex] = useState([]);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setAnimateIndex(data.map((_, index) => index));
-    }, 100); 
-    return () => clearTimeout(timeout);
-  }, [data]);
+  const animatedIndices = useSequentialAnimation(data.length, 100);
 
   return (
     <div className="flex flex-col gap-6 p-4 md:p-8 lg:p-16 min-h-screen">
@@ -16,7 +10,7 @@ const CardPorto = ({ data }) => {
         <div
           key={item.id}
           className={`flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-500 ${
-            animateIndex.includes(index) ? "animate-fadeUp" : "opacity-0"
+            animatedIndices.includes(index) ? "animate-fadeUp" : "opacity-0"
           } hover:scale-105 hover:shadow-lg`}
         >
           <div className="flex-shrink-0 w-full md:w-1/3">
