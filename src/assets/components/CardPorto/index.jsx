@@ -1,7 +1,7 @@
 
 const CardPorto = ({ data }) => {
   return (
-    <div className="flex flex-col gap-6 p-6 bg-gray-100 min-h-screen">
+    <div className="flex flex-col gap-6 p-6  min-h-screen">
       {data.map((item) => (
         <div
           key={item.id}
@@ -22,7 +22,7 @@ const CardPorto = ({ data }) => {
             <p className="text-gray-600 mt-2">{item.description}</p>
             <div className="mt-4">
               <button className="text-sm font-semibold bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors">
-                Learn More
+                Go to Website
               </button>
             </div>
           </div>

@@ -4,7 +4,7 @@ import DataPorto from "@/assets/Data/DataPorto"
 
 const Projects = () => {
   return (
-    <div className="mt-46">
+    <div className="my-32">
     <CardPorto data={DataPorto} />
     </div>
   )
