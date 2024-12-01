@@ -23,8 +23,8 @@ const List = ({ isMenuOpen, toggleMenu }) => {
             className={({ isActive }) =>
               `block ${
                 isActive
-                  ? "text-yellow-300"
-                  : "text-white transition-colors duration-200 hover:text-yellow-400"
+                  ? "text-green-300"
+                  : "text-white transition-colors duration-200 hover:text-green-400"
               }`
             }
           >
