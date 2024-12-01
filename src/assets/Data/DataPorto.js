@@ -15,7 +15,7 @@ const DataPorto = [
     title: "Amingfo",
     description: "Anime Information Website Inspired by MyAnimeList",
     imageUrl: imgAmingfo,
-    link: "https://amingfo.vercel.app/",
+    link: "https://amingfo.dwinurcahya.my.id/",
   },
   {
     id: 3,
