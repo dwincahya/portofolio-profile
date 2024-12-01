@@ -1,5 +1,5 @@
 import CardPorto from "@/assets/components/CardPorto"
-import DataPorto from "@/assets/components/CardPorto/DataPorto"
+import DataPorto from "@/assets/Data/DataPorto"
 
 
 const Projects = () => {
