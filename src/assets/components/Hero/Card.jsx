@@ -23,7 +23,7 @@ const Card = ({
       <p className="text-sm sm:text-base lg:text-lg mb-4">{Description2}</p>
       <p className="text-sm sm:text-base lg:text-lg mb-6">{Description3}</p>
       <button
-        className="bg-gray-900 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-gray-800 transition"
+        className="text-md font-semibold bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors"
         onClick={() => window.open(buttonLink, "_blank")}
       >
         {buttonName}
