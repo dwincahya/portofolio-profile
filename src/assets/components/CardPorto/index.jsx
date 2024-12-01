@@ -11,7 +11,7 @@ const CardPorto = ({ data }) => {
   }, [data]);
 
   return (
-    <div className="flex flex-col gap-6 p-16 min-h-screen">
+    <div className="flex flex-col gap-6 p-4 md:p-8 lg:p-16 min-h-screen">
       {data.map((item, index) => (
         <div
           key={item.id}
