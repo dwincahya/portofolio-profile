@@ -1,6 +1,7 @@
 import imgLightstore from "@/assets/img/Projects/Lightstore.png";
 import imgAmingfo from "@/assets/img/Projects/Amingfo.png";
 import imgDNews from "@/assets/img/Projects/Laravel-inertia.png";
+import imgSmartAgri from "@/assets/img/Projects/SmartAgri.png";
 
 const DataPorto = [
   {
@@ -23,6 +24,13 @@ const DataPorto = [
     description: "A Simple News Website Built with Laravel",
     imageUrl: imgDNews,
     link: "https://dnews.siaktive.my.id/",
+  },
+  {
+    id: 4,
+    title: "Smart Agriculture",
+    description: "Website Design for IoT Company",
+    imageUrl: imgSmartAgri,
+    link: "https://smartagri.dwinurcahya.my.id/",
   },
 ];
 
