@@ -26,25 +26,21 @@
   animation: fadeInTop 1.5s ease-out forwards; 
 }
 
-
 .animate-blink {
   animation: blink 1s step-end infinite;
 }
 
-html,
-body,
-#root {
-  scroll-behavior: smooth;
-  height: 100%;
+html, body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-  background-color: #f3f4f6;
-  overflow-x: hidden;
-  min-height: 200vh;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;  /* Mencegah scroll horizontal */
+  overflow-y: auto;    /* Mengizinkan scroll vertikal pada browser */
 }
 
-.fixed {
-  z-index: 9999; 
+#root {
+  display: flex;
+  flex-direction: column;
+  height: auto;  /* Biarkan tinggi otomatis berdasarkan konten */
+  overflow: visible;  /* Pastikan konten dapat mengalir */
 }

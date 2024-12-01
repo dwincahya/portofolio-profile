@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Suspense, lazy } from "react";
 import Navbar from "@/assets/components/Navbar";
 import Footer from "@/assets/components/Footer";
+import Loading from "@/assets/components/Loading"; 
 import ScrollToTop from "./assets/hooks/ScrollToTop";
-import { Suspense, lazy } from "react";
-import Loading from "@/assets/components/Loading";
 
 const Home = lazy(() => import("@/assets/pages/Home"));
 const Skills = lazy(() => import("@/assets/pages/Skills"));
@@ -15,7 +15,7 @@ const NotFound = lazy(() => import("@/assets/pages/NotFound"));
 const App = () => {
   return (
     <Router>
-      <ScrollToTop />
+      <ScrollToTop />  
       <Navbar />
       <Suspense fallback={<Loading />}>
         <Routes>
