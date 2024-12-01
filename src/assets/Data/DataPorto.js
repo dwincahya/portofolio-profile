@@ -8,7 +8,7 @@ const DataPorto = [
     title: "Light Store",
     description: "UI/UX Design for a Top-Up Website",
     imageUrl: imgLightstore,
-    link: "https://lightstoree.vercel.app/",
+    link: "https://lightstoree.dwinurcahya.my.id/",
   },
   {
     id: 2,
