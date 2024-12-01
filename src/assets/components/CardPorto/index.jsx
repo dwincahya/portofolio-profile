@@ -1,18 +1,30 @@
+import React, { useEffect, useState } from "react";
 
 const CardPorto = ({ data }) => {
+  const [animateIndex, setAnimateIndex] = useState([]);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setAnimateIndex(data.map((_, index) => index));
+    }, 100); 
+    return () => clearTimeout(timeout);
+  }, [data]);
+
   return (
-    <div className="flex flex-col gap-6 p-6  min-h-screen">
-      {data.map((item) => (
+    <div className="flex flex-col gap-6 p-16 min-h-screen">
+      {data.map((item, index) => (
         <div
           key={item.id}
-          className="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden animate-fadeUp"
+          className={`flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-500 ${
+            animateIndex.includes(index) ? "animate-fadeUp" : "opacity-0"
+          } hover:scale-105 hover:shadow-lg`}
         >
           <div className="flex-shrink-0 w-full md:w-1/3">
             <a href={item.link} target="_blank" rel="noopener noreferrer">
               <img
                 src={item.imageUrl}
                 alt={item.title}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-cover transition-opacity duration-300 hover:opacity-90"
               />
             </a>
           </div>
@@ -21,9 +33,14 @@ const CardPorto = ({ data }) => {
             <h1 className="text-2xl font-bold text-gray-800">{item.title}</h1>
             <p className="text-gray-600 mt-2">{item.description}</p>
             <div className="mt-4">
-              <button className="text-sm font-semibold bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors">
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-semibold bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors"
+              >
                 Go to Website
-              </button>
+              </a>
             </div>
           </div>
         </div>
