@@ -1,26 +1,29 @@
+import imgLightstore from "@/assets/img/Projects/Lightstore.png";
+import imgAmingfo from "@/assets/img/Projects/Amingfo.png";
+import imgDNews from "@/assets/img/Projects/Laravel-inertia.png";
+
 const DataPorto = [
-    {
-      id: 1,
-      title: "Web Navigation Redesign",
-      description: "UX Research",
-      imageUrl: "https://via.placeholder.com/1024x300", 
-      link: "https://unsplash.com/photos/your-image-id",
-    },
-    {
-      id: 2,
-      title: "Mobile App Prototype",
-      description: "Design & Development",
-      imageUrl: "https://via.placeholder.com/1024x300", 
-      link: "https://unsplash.com/photos/another-image-id",
-    },
-    {
-      id: 3,
-      title: "E-Commerce Dashboard",
-      description: "Admin Panel Design",
-      imageUrl: "https://via.placeholder.com/1024x300", 
-      link: "https://unsplash.com/photos/yet-another-image-id",
-    },
-  ];
-  
-  export default DataPorto;
-  
+  {
+    id: 1,
+    title: "Light Store",
+    description: "UI/UX Design for a Top-Up Website",
+    imageUrl: imgLightstore,
+    link: "https://lightstoree.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "Amingfo",
+    description: "Anime Information Website Inspired by MyAnimeList",
+    imageUrl: imgAmingfo,
+    link: "https://amingfo.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "DNews",
+    description: "A Simple News Website Built with Laravel",
+    imageUrl: imgDNews,
+    link: "https://dnews.siaktive.my.id/",
+  },
+];
+
+export default DataPorto;
