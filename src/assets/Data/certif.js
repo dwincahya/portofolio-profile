@@ -1,6 +1,7 @@
 import certificate1 from "@/assets/img/certifcate/Amikom-HMIF.jpg"
 import certificate2 from "@/assets/img/certifcate/Amikom-UXDesign.jpg"
 import certificate3 from "@/assets/img/certifcate/Amikom-WebDesign.jpg"
+import certificate4 from "@/assets/img/certifcate/KMTek-DesignPcb.jpeg"
 
 
 const certificates = [
@@ -22,6 +23,13 @@ const certificates = [
       image: certificate2,
       file: "/certificates/Amikom-UXDesign.pdf",
   },
+  {
+    "title": "IoT Webinar: PCB Design",
+    "description": "Certificate for participating in the webinar 'IoT: Belajar Desain PCB Dari Nol - Panduan Praktis untuk Pemula', hosted by KMTek.",
+    "image": certificate4, 
+    "file": "/certificates/KMTek-DesignPcb.pdf"
+  }
+  
 ];
 
   
