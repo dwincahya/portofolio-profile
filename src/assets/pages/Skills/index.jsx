@@ -7,7 +7,6 @@ const Skills = () => {
     <div className="items-center pt-32 justify-center text-center">
       <Header title="My Skills" />
       <SkillCard data={SkillData} />
-      <SkillCard data={SkillData} />
     </div>
   );
 };
