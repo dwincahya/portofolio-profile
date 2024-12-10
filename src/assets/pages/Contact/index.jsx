@@ -1,7 +1,11 @@
+import Form from "@/assets/components/Form"
+
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className="py-16">
+      <Form />
+    </div>
   )
 }
 
