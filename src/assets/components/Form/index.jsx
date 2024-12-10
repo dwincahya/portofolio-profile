@@ -1,7 +1,18 @@
+import React, { useState } from "react";
+import { FaBuilding, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 
 const Form = () => {
+  const [phone, setPhone] = useState("+1");
+
+  const handlePhoneChange = (e) => {
+    const value = e.target.value;
+    if (value.startsWith("+")) {
+      setPhone(value);
+    }
+  };
+
   return (
-    <div className=" min-h-screen flex items-center justify-center py-10">
+    <div className="min-h-screen flex items-center justify-center py-10 px-4 md:px-0">
       <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-2xl">
         <h1 className="text-2xl font-bold text-blue-700 mb-4 text-center">Contact Me</h1>
         <p className="text-gray-700 text-center mb-6">
@@ -46,8 +57,10 @@ const Form = () => {
           <div>
             <label className="block text-gray-600 text-sm mb-2" htmlFor="phone">Phone Number</label>
             <input
-              type="number"
+              type="text"
               id="phone"
+              value={phone}
+              onChange={handlePhoneChange}
               className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
               placeholder="Phone Number"
               required
@@ -74,12 +87,28 @@ const Form = () => {
         </form>
 
         <div className="mt-6 text-gray-700 text-sm">
-          <p><strong>Company Information:</strong> Thamborang LLC</p>
-          <p>Tax ID: USXXXXXX</p>
-          <p className="mt-2"><strong>Address:</strong></p>
-          <p>SILVER LAKE, United States 98th Little Avenue</p>
-          <p>Zip Code/Postal code: 03075</p>
-          <p className="mt-2"><strong>Call us:</strong> +1 (646) 290-5060</p>
+          <div className="flex items-center mb-4">
+            <FaBuilding className="text-blue-600 text-xl mr-2" />
+            <div>
+              <p><strong>Company Information:</strong> Thamborang LLC</p>
+              <p>Tax ID: USXXXXXX</p>
+            </div>
+          </div>
+          <div className="flex items-center mb-4">
+            <FaMapMarkerAlt className="text-blue-600 text-xl mr-2" />
+            <div>
+              <p><strong>Address:</strong></p>
+              <p>SILVER LAKE, United States 98th Little Avenue</p>
+              <p>Zip Code/Postal code: 03075</p>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <FaPhone className="text-blue-600 text-xl mr-2" />
+            <div>
+              <p><strong>Call us:</strong></p>
+              <p>+62 (646) 290-5060</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
