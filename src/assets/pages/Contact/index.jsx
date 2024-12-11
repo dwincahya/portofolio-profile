@@ -3,7 +3,7 @@ import Form from "@/assets/components/Form"
 
 const Contact = () => {
   return (
-    <div className="my-16 md:my-10 lg:my-12">
+    <div className="my-10 md:my-12 lg:my-14">
       <Form />
     </div>
   )

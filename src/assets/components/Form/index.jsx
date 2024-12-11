@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { FaBuilding, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import { SendEmail } from "./SendEmail";
 
 const Form = () => {
-  const [phone, setPhone] = useState("+1");
+  const [phone, setPhone] = useState("+62");
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -26,6 +25,18 @@ const Form = () => {
     }));
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    SendEmail(e, formData, phone);
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      message: "",
+    });
+    setPhone("+1");
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center py-10 px-4 md:px-0">
       <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-2xl">
@@ -33,13 +44,12 @@ const Form = () => {
           Contact Me
         </h1>
         <p className="text-gray-700 text-center mb-6">
-          We use an agile approach to test assumptions and connect with the
-          needs of your audience early and often.
+          I am ready to assist with your needs. Feel free to reach out to me anytime.
         </p>
 
         <form
           className="space-y-4"
-          onSubmit={(e) => SendEmail(e, formData, phone)}
+          onSubmit={handleSubmit}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -124,7 +134,7 @@ const Form = () => {
             <textarea
               id="message"
               className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-              placeholder="Leave a comment..."
+              placeholder="Write your message here..."
               rows="4"
               value={formData.message}
               onChange={handleChange}
@@ -140,36 +150,6 @@ const Form = () => {
           </button>
         </form>
 
-        <div className="mt-6 text-gray-700 text-sm">
-          <div className="flex items-center mb-4">
-            <FaBuilding className="text-blue-600 text-3xl mr-3" />
-            <div>
-              <p>
-                <strong>Company Information:</strong> Thamborang LLC
-              </p>
-              <p>Tax ID: USXXXXXX</p>
-            </div>
-          </div>
-          <div className="flex items-center mb-4">
-            <FaMapMarkerAlt className="text-blue-600 text-3xl mr-3" />
-            <div>
-              <p>
-                <strong>Address:</strong>
-              </p>
-              <p>SILVER LAKE, United States 98th Little Avenue</p>
-              <p>Zip Code/Postal code: 03075</p>
-            </div>
-          </div>
-          <div className="flex items-center">
-            <FaPhone className="text-blue-600 text-3xl mr-3" />
-            <div>
-              <p>
-                <strong>Call us:</strong>
-              </p>
-              <p>+1 (646) 290-5060</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
