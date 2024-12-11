@@ -5,6 +5,7 @@ import Footer from "@/assets/components/Footer";
 import Loading from "@/assets/components/Loading"; 
 import ScrollToTop from "./assets/hooks/ScrollToTop";
 
+
 const Home = lazy(() => import("@/assets/pages/Home"));
 const Skills = lazy(() => import("@/assets/pages/Skills"));
 const Projects = lazy(() => import("@/assets/pages/Projects"));
