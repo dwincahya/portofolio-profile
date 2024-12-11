@@ -34,7 +34,7 @@ const Form = () => {
       email: "",
       message: "",
     });
-    setPhone("+1");
+    setPhone("+62");
   };
 
   return (
