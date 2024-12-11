@@ -3,9 +3,9 @@ import "react-toastify/dist/ReactToastify.css";
 
 const calculateResponsiveWidth = () => {
   const screenWidth = window.innerWidth;
-  if (screenWidth < 640) return "90%"; 
-  if (screenWidth < 1024) return "70%"; 
-  return "50%"; 
+  if (screenWidth < 640) return "100%"; 
+  if (screenWidth < 1024) return "100%"; 
+  return "70%"; 
 };
 
 export const showSuccessAlert = (message) => {
