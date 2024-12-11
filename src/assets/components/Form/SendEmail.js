@@ -1,4 +1,5 @@
 import emailjs from "emailjs-com";
+import { showSuccessAlert, showErrorAlert } from "@/assets/components/Alert";
 
 export const SendEmail = (e, formData, phone) => {
   e.preventDefault();
@@ -9,7 +10,7 @@ export const SendEmail = (e, formData, phone) => {
 
   if (!serviceID || !templateID || !userID) {
     console.error("Missing EmailJS configuration in .env file");
-    alert("Email configuration error. Please contact the administrator.");
+    showErrorAlert("Email configuration error. Please contact the administrator.");
     return;
   }
 
@@ -24,10 +25,10 @@ export const SendEmail = (e, formData, phone) => {
     .send(serviceID, templateID, emailParams, userID)
     .then((response) => {
       console.log("SUCCESS!", response.status, response.text);
-      alert("Message sent successfully!");
+      showSuccessAlert("Message sent successfully!");
     })
     .catch((error) => {
       console.error("FAILED...", error);
-      alert("Failed to send message. Please try again.");
+      showErrorAlert("Failed to send message. Please try again.");
     });
 };

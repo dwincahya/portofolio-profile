@@ -4,7 +4,8 @@ import Navbar from "@/assets/components/Navbar";
 import Footer from "@/assets/components/Footer";
 import Loading from "@/assets/components/Loading"; 
 import ScrollToTop from "./assets/hooks/ScrollToTop";
-
+import { ToastContainer } from "react-toastify"; 
+import "react-toastify/dist/ReactToastify.css"; 
 
 const Home = lazy(() => import("@/assets/pages/Home"));
 const Skills = lazy(() => import("@/assets/pages/Skills"));
@@ -15,21 +16,24 @@ const NotFound = lazy(() => import("@/assets/pages/NotFound"));
 
 const App = () => {
   return (
-    <Router>
-      <ScrollToTop />  
-      <Navbar />
-      <Suspense fallback={<Loading />}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Suspense>
-      <Footer />
-    </Router>
+    <>
+      <ToastContainer />
+      <Router>
+        <ScrollToTop />  
+        <Navbar />
+        <Suspense fallback={<Loading />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+        <Footer />
+      </Router>
+    </>
   );
 };
 
