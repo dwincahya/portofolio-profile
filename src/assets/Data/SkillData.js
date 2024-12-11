@@ -1,61 +1,52 @@
-import { FaReact, FaHtml5, FaFigma, FaBootstrap, FaDatabase} from "react-icons/fa"; 
+import { FaReact, FaHtml5, FaFigma, FaBootstrap, FaDatabase } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
-import { FaPython, FaLaravel } from "react-icons/fa"; 
+import { FaPython, FaLaravel } from "react-icons/fa";
 
 const SkillData = [
   {
-    icon: FaReact, 
+    icon: FaReact,
     title: "React",
-    description:
-      "Skilled in building frontend applications using React, including hooks and efficient state management.",
+    description: "Learning to create interactive user interfaces for websites using React, a popular JavaScript library.",
   },
   {
     icon: FaHtml5,
     title: "HTML & CSS",
-    description:
-      "Proficient in creating web structures with HTML and designing responsive layouts using CSS.",
+    description: "Learning the basics of creating website structure and styling using HTML and CSS.",
   },
   {
     icon: FaFigma,
     title: "Figma",
-    description:
-      "Experienced in designing user interfaces that are visually appealing and user-friendly using Figma.",
+    description: "Starting to design visually appealing website layouts using Figma, such as creating buttons, boxes, and layouts.",
   },
   {
     icon: FaBootstrap,
     title: "Bootstrap",
-    description:
-      "Utilized Bootstrap to build responsive UI with pre-built components and utilities.",
+    description: "Using Bootstrap to quickly create good-looking website designs without writing a lot of code.",
   },
   {
     icon: FaDatabase,
     title: "MySQL",
-    description:
-      "Skilled in managing relational databases with MySQL for backend needs and data processing.",
+    description: "Learning to manage data in a database using MySQL for website purposes.",
   },
   {
     icon: SiTailwindcss,
     title: "Tailwind CSS",
-    description:
-      "Designed fast and consistent applications using the utility-first Tailwind CSS framework.",
+    description: "Using Tailwind CSS to create website styles more quickly and easily.",
   },
   {
     icon: SiNextdotjs,
     title: "Next.js",
-    description:
-      "Built optimal React applications with Server-Side Rendering (SSR) and Static Site Generation (SSG) using Next.js.",
+    description: "Building faster and more efficient React websites using Next.js.",
   },
   {
-    icon: FaLaravel,  
+    icon: FaLaravel,
     title: "Laravel",
-    description:
-      "Experienced in building robust web applications with Laravel, utilizing MVC, and building RESTful APIs.",
+    description: "Learning to create more complex web applications using Laravel.",
   },
   {
-    icon: FaPython,  
+    icon: FaPython,
     title: "Python",
-    description:
-      "Proficient in Python programming for various applications, including data science, machine learning, and automation.",
+    description: "Learning the Python programming language for various purposes, such as data processing and creating simple programs.",
   },
 ];
 
