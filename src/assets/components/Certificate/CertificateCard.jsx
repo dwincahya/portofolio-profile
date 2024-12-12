@@ -1,7 +1,6 @@
-
 const CertificateCard = ({ data }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pb-10 gap-4 sm:gap-6 md:gap-8 lg:gap-20 justify-items-center">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 pb-10 gap-8 sm:gap-16 md:gap-20 lg:gap-24 xl:gap-28 2xl:gap-32 justify-items-center">
       {data.map((certificate, index) => (
         <div
           key={index}
