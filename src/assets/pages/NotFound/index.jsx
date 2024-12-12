@@ -5,7 +5,7 @@ import Header from "./Header";
 const NotFound = () => {
   return (
     <div>
-      <div className="mt-32 text-center">
+      <div className="my-10 md:my-12 lg:my-14 xl:my-16 2xl:my-28 text-center">
         <Header />
         <Animate />
         <p className="mt-4 text-gray-600">
