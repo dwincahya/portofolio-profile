@@ -13,7 +13,7 @@ const SkillCard = ({data}) => {
                 <div className="flex justify-center items-center text-blue-950 text-5xl mb-4">
                   <skill.icon />
                 </div>
-                <h3 className="text-lg font-bold text-blue-600 mb-4">
+                <h3 className="text-lg font-bold text-black mb-4">
                   {skill.title}
                 </h3>
                 <p className="text-gray-600">{skill.description}</p>
