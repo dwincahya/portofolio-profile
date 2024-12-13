@@ -9,7 +9,7 @@ const List = ({ data }) => {
         <div
           key={experience.id}
           className={`bg-white shadow-md rounded-lg p-6 mb-8 border border-gray-200 hover:shadow-lg transition-all duration-500 transform ${
-            animatedIndices.includes(index) ? "animate-fadeUp" : "opacity-0 translate-y-10"
+            animatedIndices.includes(index) ? "animate-fadeUp" : "opacity-0 "
           }`}
         >
           <h3 className="text-xl font-semibold text-black">
