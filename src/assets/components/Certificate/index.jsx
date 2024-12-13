@@ -1,5 +1,5 @@
 import CertificateCard from "./CertificateCard";
-import certificates from "../../Data/certif.js";
+import certificates from "@/assets/Data/Certif.js";
 
 const Certificate = () => {
   return (
