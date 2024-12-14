@@ -1,4 +1,3 @@
-import React from "react";
 import useSequentialAnimation from "@/assets/hooks/useSequentialAnimation"; 
 
 const CardPorto = ({ data }) => {

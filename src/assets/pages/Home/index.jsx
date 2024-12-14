@@ -1,4 +1,3 @@
-// import Certificate from "@/assets/components/Certificate"
 import Hero from "@/assets/components/Hero"
 import CertificateCard from "@/assets/components/CertificateCard"
 import DataCertif from "@/assets/Data/DataCertif"
