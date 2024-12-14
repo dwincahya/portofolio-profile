@@ -2,7 +2,7 @@ import useSequentialAnimation from "@/assets/hooks/useSequentialAnimation";
 
 const List = ({ data }) => {
   const animatedIndices = useSequentialAnimation(data.length, 100);
-
+// contoh ini
   return (
     <div className="experience-list py-12 px-4 md:px-6 lg:px-8">
       {data.map((experience, index) => (
