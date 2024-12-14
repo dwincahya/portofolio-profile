@@ -4,7 +4,7 @@ import certificate3 from "@/assets/img/certifcate/Amikom-WebDesign.jpg"
 import certificate4 from "@/assets/img/certifcate/KMTek-DesignPcb.jpeg"
 
 
-const certificates = [
+const DataCertif = [
   {
       title: "Web Design Competition",
       description: "Certificate for participating in a web design competition from AMIKOM.",
@@ -33,5 +33,5 @@ const certificates = [
 ];
 
   
-  export default certificates;
+  export default DataCertif;
   

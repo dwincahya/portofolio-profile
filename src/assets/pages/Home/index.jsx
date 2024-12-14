@@ -1,5 +1,5 @@
-import Certificate from "../../components/Certificate"
-import Hero from "../../components/Hero"
+import Certificate from "@/assets/components/Certificate"
+import Hero from "@/assets/components/Hero"
 
 
 const Home = () => {
