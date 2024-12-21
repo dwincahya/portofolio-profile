@@ -4,7 +4,7 @@ const CardPorto = ({ data }) => {
   const animatedIndices = useSequentialAnimation(data.length, 100);
 
   return (
-    <div className="flex flex-col gap-6 p-4 md:p-8 lg:p-16 min-h-screen">
+    <div className="flex flex-col gap-6 p-6 md:p-8 lg:p-16 min-h-screen">
       {data.map((item, index) => (
         <div
           key={item.id}
