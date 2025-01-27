@@ -1,30 +1,26 @@
 import { NavLink } from "react-router-dom";
 
-const List = ({ isMenuOpen, toggleMenu }) => {
+const List = ({ toggleMenu }) => {
+  const links = [
+    { name: "Home", path: "/" },
+    { name: "Skills", path: "/skills" },
+    { name: "Projects", path: "/projects" },
+    { name: "Experiences", path: "/experience" },
+    { name: "Contact", path: "/contact" },
+  ];
+
   return (
-    <ul
-      className={`${
-        isMenuOpen
-          ? "flex flex-col space-y-8 text-xl font-medium items-center w-full mt-6"
-          : "hidden md:flex md:flex-row md:space-x-8 xl:text-xl lg:space-x-12  2xl:text-3xl md:items-center"
-      }`}
-    >
-      {[
-        { name: "Home", path: "/" },
-        { name: "Skills", path: "/skills" },
-        { name: "Projects", path: "/projects" },
-        { name: "Experiences", path: "/experience" },
-        { name: "Contact", path: "/contact" },
-      ].map(({ name, path }) => (
+    <ul className="flex flex-col items-center space-y-6 text-lg font-medium md:flex-row md:space-x-8 md:space-y-0 md:items-center text-center">
+      {links.map(({ name, path }) => (
         <li key={name}>
           <NavLink
             to={path}
             onClick={toggleMenu}
             className={({ isActive }) =>
-              `block ${
+              `transition-colors duration-300 ${
                 isActive
-                  ? "text-green-300"
-                  : "text-white transition-colors duration-200 hover:text-green-400"
+                  ? "text-green-400 font-bold"
+                  : "text-slate-100 hover:text-green-400"
               }`
             }
           >
