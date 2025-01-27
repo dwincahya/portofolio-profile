@@ -3,7 +3,7 @@ import PhotoProfile from "./Profile";
 
 const Hero = () => {
   return (
-    <div className="mt-20 md:mt-24 lg:mt-28 xl:mt-32 px-2 sm:px-5 lg:px-20 flex flex-col-reverse lg:flex-row items-center justify-between  space-y-8 lg:space-y-0 lg:space-x-8">
+    <div className="z-50 mt-20 md:mt-24 lg:mt-28 xl:mt-32 px-2 sm:px-5 lg:px-20 flex flex-col-reverse lg:flex-row items-center justify-between  space-y-8 lg:space-y-0 lg:space-x-8">
       <PhotoProfile />
       <Card
         Header="Hi, I'm Cahya."
