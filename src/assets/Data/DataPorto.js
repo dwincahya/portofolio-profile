@@ -12,13 +12,13 @@ const DataPorto = [
     imageUrl: imgLightstore,
     link: "https://lightstore.dwinurcahya.my.id/",
   },
-  {
-    id: 2,
-    title: "CahayaAI",
-    description: "AI Website with Syntax Highlighting Features",
-    imageUrl: imgCahayaAI,
-    link: "https://ai.dwinurcahya.my.id/",
-  },
+  // {
+  //   id: 2,
+  //   title: "CahayaAI",
+  //   description: "AI Website with Syntax Highlighting Features",
+  //   imageUrl: imgCahayaAI,
+  //   link: "https://ai.dwinurcahya.my.id/",
+  // },
   {
     id: 3,
     title: "Amingfo",
@@ -33,14 +33,13 @@ const DataPorto = [
     imageUrl: imgSmartAgri,
     link: "https://smartagri.dwinurcahya.my.id/",
   },
-  {
-    id: 5,
-    title: "DNews",
-    description: "A Simple News Website Built with Laravel",
-    imageUrl: imgDNews,
-    link: "https://dnews.siaktive.my.id/",
-  },
- 
+  // {
+  //   id: 5,
+  //   title: "DNews",
+  //   description: "A Simple News Website Built with Laravel",
+  //   imageUrl: imgDNews,
+  //   link: "https://dnews.siaktive.my.id/",
+  // },
 ];
 
 export default DataPorto;
