@@ -2,7 +2,8 @@ import { useState } from "react";
 import { SendEmail } from "./SendEmail";
 
 const Form = () => {
-  const [phone, setPhone] = useState("+62");
+  const [phone, setPhone] = useState("+62 ");
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -11,9 +12,26 @@ const Form = () => {
   });
 
   const handlePhoneChange = (e) => {
-    const value = e.target.value;
-    if (/^\+\d*$/.test(value)) { 
-      setPhone(value);
+    let value = e.target.value;
+
+    // Pastikan selalu ada tanda "+"
+    if (!value.startsWith("+")) {
+      value = "+" + value.replace(/\D/g, ""); // Hanya angka setelah "+"
+    }
+
+    // Memisahkan kode negara dan nomor setelahnya
+    const match = value.match(/^(\+\d{0,3})\s?(\d*)$/);
+
+    if (match) {
+      let countryCode = match[1]; // Kode negara (misalnya "+62")
+      let phoneNumber = match[2].replace(/\D/g, ""); // Hanya angka setelah kode negara
+
+      // Tambahkan spasi setelah kode negara jika sudah ada angka setelah "+"
+      if (countryCode.length > 1 && !countryCode.includes(" ")) {
+        countryCode += " ";
+      }
+
+      setPhone(`${countryCode}${phoneNumber}`.trimEnd());
     }
   };
 
@@ -34,7 +52,7 @@ const Form = () => {
       email: "",
       message: "",
     });
-    setPhone("+62");
+    setPhone("+62 ");
   };
 
   return (
@@ -47,16 +65,10 @@ const Form = () => {
           I am ready to assist with your needs. Feel free to reach out to me anytime.
         </p>
 
-        <form
-          className="space-y-4"
-          onSubmit={handleSubmit}
-        >
+        <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label
-                className="block text-gray-600 text-sm mb-2"
-                htmlFor="firstName"
-              >
+              <label className="block text-gray-600 text-sm mb-2" htmlFor="firstName">
                 First Name
               </label>
               <input
@@ -70,10 +82,7 @@ const Form = () => {
               />
             </div>
             <div>
-              <label
-                className="block text-gray-600 text-sm mb-2"
-                htmlFor="lastName"
-              >
+              <label className="block text-gray-600 text-sm mb-2" htmlFor="lastName">
                 Last Name
               </label>
               <input
@@ -89,10 +98,7 @@ const Form = () => {
           </div>
 
           <div>
-            <label
-              className="block text-gray-600 text-sm mb-2"
-              htmlFor="email"
-            >
+            <label className="block text-gray-600 text-sm mb-2" htmlFor="email">
               Your Email
             </label>
             <input
@@ -107,10 +113,7 @@ const Form = () => {
           </div>
 
           <div>
-            <label
-              className="block text-gray-600 text-sm mb-2"
-              htmlFor="phone"
-            >
+            <label className="block text-gray-600 text-sm mb-2" htmlFor="phone">
               Phone Number
             </label>
             <input
@@ -125,10 +128,7 @@ const Form = () => {
           </div>
 
           <div>
-            <label
-              className="block text-gray-600 text-sm mb-2"
-              htmlFor="message"
-            >
+            <label className="block text-gray-600 text-sm mb-2" htmlFor="message">
               Your Message
             </label>
             <textarea
@@ -149,7 +149,6 @@ const Form = () => {
             Send Message
           </button>
         </form>
-
       </div>
     </div>
   );

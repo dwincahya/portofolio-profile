@@ -13,6 +13,21 @@ const experienceData = [
       "Developed personal projects such as a portfolio website."
     ]
   },
+  {
+    id: 2,
+    title: "Student",
+    company: "DBS FOUNDATION",
+    location: "Dicoding",
+    startDate: "Jan 2025",
+    endDate: "Present",
+    category: "FullStack Education",
+    description: [
+      "Learn the basics of web creation.",
+      "Study logic gates.",
+      "Learn backend with javascript.",
+      "Create a full stack website using HTML, CSS, Javascript.",
+    ]
+  },
 ];
 
 export default experienceData;

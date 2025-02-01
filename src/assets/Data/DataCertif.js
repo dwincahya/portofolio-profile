@@ -1,7 +1,6 @@
-import certificate1 from "@/assets/img/certifcate/Amikom-HMIF.jpg"
+import certificate1 from "@/assets/img/certifcate/belajardasarweb.png"
 import certificate2 from "@/assets/img/certifcate/Amikom-UXDesign.jpg"
 import certificate3 from "@/assets/img/certifcate/Amikom-WebDesign.jpg"
-import certificate4 from "@/assets/img/certifcate/KMTek-DesignPcb.jpeg"
 
 
 const DataCertif = [
@@ -12,10 +11,10 @@ const DataCertif = [
       file: "/certificates/Amikom-WebDesign.pdf", 
   },
   {
-      title: "HMIF Dedicated to School 2024",
-      description: "Certificate for participating in the HMIF Dedicated to School event.",
+      title: "Belajar Dasar Pemrograman Web",
+      description: "Learn basic web developer with HTML5 and CSS.",
       image: certificate1,
-      file: "/certificates/Amikom-HMIF.pdf",
+      file: "https://www.dicoding.com/certificates/N9ZO9E8JYXG5",
   },
   {
       title: "UI/UX Competition",
@@ -23,13 +22,6 @@ const DataCertif = [
       image: certificate2,
       file: "/certificates/Amikom-UXDesign.pdf",
   },
-  {
-    "title": "IoT Webinar: PCB Design",
-    "description": "Certificate for participating in the webinar 'IoT: Belajar Desain PCB Dari Nol - Panduan Praktis untuk Pemula', hosted by KMTek.",
-    "image": certificate4, 
-    "file": "/certificates/KMTek-DesignPcb.pdf"
-  }
-  
 ];
 
   
